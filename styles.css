@@ -45,7 +45,7 @@ body {
 }
 
 .nav-area .links a:hover {
-  color: wheat;
+  color: #5da7a0;
 }
 
 .hero-section .container {
@@ -87,7 +87,7 @@ body {
 }
 
 .hero-section p a:hover {
-  color: rgb(236, 134, 94);
+  color: #5da7a0;
 }
 
 button {
@@ -119,17 +119,42 @@ button {
 
 .info-section .container .cards img {
   width: 150px;
+  /* adding a 1px border that is the color of the bg
+     is a hack, so that the image doesn't "jump"
+     when we hover over it. */
+  border: 1px solid #fff;
   border-radius: 10px;
+}
+
+.info-section .container .cards img:hover {
+  border: solid 1px #5da7a0;
 }
 
 .info-section .container .cards .card-item {
   flex: 1;
   display: block;
   text-align: center;
+  color: rgb(88, 102, 116);
+  font-size: smaller;
+}
+
+.card-item h4 {
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+
+.card-item a {
+  text-decoration: none;
+  color: #1f3937;
+}
+
+.card-item  a:hover {
+  color: #5da7a0;
 }
 
 .testimonial {
   background-color: #e5e7eb;
+  color: #1f3937;
 }
 
 .testimonial .container {
@@ -185,4 +210,19 @@ button {
 
 .footer .copyright {
   padding: 52px auto;
+}
+
+/* Adjust contents to small screens */
+
+@media(max-width: 768px) {
+  .hero-section .container {
+    flex-direction: column;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .info-section .container .cards {
+    flex-direction: column;
+    padding-top: 20px;
+  }
 }
