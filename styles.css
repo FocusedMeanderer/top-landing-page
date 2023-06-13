@@ -5,5 +5,184 @@
 }
 
 body {
-  width: 100%;  
+  font-family: Verdana, sans-serif;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.nav-area,
+.hero-section,
+.footer {
+  background-color: #1f2937;
+  color: white;
+}
+
+.nav-area .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+
+.nav-area .logo {
+  font-size: 24px;
+  color: #f9faf8;
+}
+
+.nav-area ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-area .links a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+.nav-area .links a:hover {
+  color: wheat;
+}
+
+.hero-section .container {
+  display: flex;
+  gap: 1rem;
+  padding: 52px 0;
+  align-items: center;
+}
+
+.hero-section img {
+  width: 300px;
+}
+
+.hero-section button {
+  padding: 5px 12px;
+  border-radius: 10px;
+  border-style: none;
+}
+
+.hero-section h1 {
+  font-size: 48px;
+  font-weight: x-bold;
+  margin-bottom: 16px;
+}
+
+.hero-section p {
+  font-size: 18px;
+  color: #e5e7eb;
+  margin-bottom: 16px;
+}
+
+.hero-section p a {
+  text-decoration: none;
+  color:wheat;
+}
+
+.hero-section p a:visited {
+  color: wheat;
+}
+
+.hero-section p a:hover {
+  color: rgb(236, 134, 94);
+}
+
+button {
+  background-color: #3882f6;
+  color: white;
+}
+
+.info-section .container {
+  padding: 52px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-section .container .info-header {
+  font-size: 36px;
+  font-weight: xtra-bold;
+  color: #1f3937;
+  margin-bottom: 24px;
+}
+
+.info-section .container .cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.info-section .container .cards img {
+  width: 150px;
+  border-radius: 10px;
+}
+
+.info-section .container .cards .card-item {
+  flex: 1;
+  display: block;
+  text-align: center;
+}
+
+.testimonial {
+  background-color: #e5e7eb;
+}
+
+.testimonial .container {
+  padding: 32px 0;
+}
+
+.testimonial .container .quote-card {
+  width: 60%;
+  margin: 52px auto;
+}
+
+.testimonial .container .quote-card .quote-src {
+  text-align: right;
+}
+
+.testimonial .quote {
+  font-size: 36px;
+  font-weight: light;
+  font-style: italic;
+  color: #1f2937;
+}
+
+.testimonial .quote-src {
+  color: #1f2937;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.pitch-area .container {
+  background-color: #3882f6;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  padding: 32px 0;
+  margin: 52px auto;
+}
+
+.pitch-area button.pitch-signup {
+  padding: 4px 16px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #fff;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 0;
+}
+
+.footer .copyright {
+  padding: 52px auto;
 }
